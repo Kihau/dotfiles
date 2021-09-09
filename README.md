@@ -1,3 +1,11 @@
 # Linux dotfiles and other things
-- [ ] Add i3 config
-- [ ] Add polybar config 
+### Those config files are used in arch
+btw.
+### TO DO:
+- [x] Add i3 config
+- [x] Add polybar config 
+- [ ] Create *quick installation* script for config files 
+- [ ] Configure i3 
+- [ ] Configure polybar
+- [ ] Configure neovim and alacritty
+
