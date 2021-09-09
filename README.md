@@ -8,6 +8,7 @@ btw.
 - Window manager: [i3wm](https://i3wm.org/)
 - Terminal emulator: [Alacritty](https://alacritty.org/)
 - Text editor: [NeoVim](https://neovim.io/)
+- Wallpaper setter: [Nitrogen](https://wiki.archlinux.org/title/Nitrogen)
 
 ### Quick replacement of config files
 `sh ./quick-setup.sh`
