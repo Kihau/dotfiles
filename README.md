@@ -13,7 +13,7 @@ btw.
 `sh ./quick-setup.sh`
 
 ### Quick install of nessesary programs:
-`sudo pacman -S i3 neovim alacritty ; yay -S polybar`
+`sudo pacman -S i3 neovim alacritty nitrogen ; yay -S polybar`
 
 ### Maybe TO DO:
 - [ ] Add rofi config?
