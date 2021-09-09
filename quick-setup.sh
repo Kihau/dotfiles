@@ -8,11 +8,11 @@ if [ ! -d "$HOME/.config" ] ; then
 fi
 
 # Replace bash config files with new ones
-cp bashrc ~/.bashrc
-cp bash_aliases ~/.bash_aliases
+cp -f bashrc $HOME/.bashrc
+cp -f bash_aliases $HOME/.bash_aliases
 
 # Replace/Create all config files
-cp -r config ~/.config
+cp -rf ./config/* $HOME/.config/
 
 # If not existant, create directory and copy wallpaper.
 if [ ! -d "$HOME/.wallpapers" ] ; then
