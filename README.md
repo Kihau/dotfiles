@@ -9,7 +9,10 @@ btw.
 - Terminal emulator: [Alacritty](https://alacritty.org/)
 - Text editor: [NeoVim](https://neovim.io/)
 
-### Quick Install:
+### Quick replacement of config files
+`sh ./quick-setup.sh`
+
+### Quick install of nessesary programs:
 `sudo pacman -S i3 neovim alacritty ; yay -S polybar`
 
 ### Maybe TO DO:
@@ -18,7 +21,7 @@ btw.
 ### TO DO:
 - [x] Add i3 config
 - [x] Add polybar config 
-- [ ] Create *quick setup* script for config files 
+- [x] Create *quick setup* script for config files 
 - [ ] Configure i3 
 - [ ] Configure polybar
 - [ ] Configure neovim and alacritty
