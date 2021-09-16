@@ -1,0 +1,13 @@
+pattern='for_window \[class=\"\^\.\*\"\] floating'
+#echo $pattern
+output=$(grep "$pattern" $HOME/.config/i3/config | sed "s/$pattern //")
+#echo $output
+
+if [ $output == "enabled" ]; then
+	sed -i "s/$pattern.*/$pattern disabled/" $HOME/.config/i3/config
+elif [ $output == "disabled" ]; then
+	sed -i "s/$pattern.*/$pattern enabled/" $HOME/.config/i3/config
+
+fi
+
+i3-msg reload

@@ -13,6 +13,7 @@ cp -f bash_aliases $HOME/.bash_aliases
 
 # Replace/Create all config files
 cp -rf ./config/* $HOME/.config/
+i3-msg reload
 
 # If not existant, create directory and copy wallpaper.
 if [ ! -d "$HOME/.wallpapers" ] ; then
