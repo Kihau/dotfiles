@@ -23,6 +23,7 @@ btw.
 - [x] Add i3 config
 - [x] Add polybar config 
 - [x] Create *quick setup* script for config files 
+- [ ] Add aliases for colored less, more and cat
 - [ ] Configure i3 
 - [ ] Configure polybar
 - [ ] Configure neovim and alacritty
