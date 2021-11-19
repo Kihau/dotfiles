@@ -9,15 +9,26 @@ btw.
 - Terminal emulator: [Alacritty](https://alacritty.org/)
 - Text editor: [NeoVim](https://neovim.io/)
 - Wallpaper setter: [Nitrogen](https://wiki.archlinux.org/title/Nitrogen)
+- Rofi here
+- Picom here
 
 ### Quick replacement of config files
 `sh ./quick-setup.sh`
 
 ### Quick install of nessesary programs:
-`sudo pacman -S i3 neovim alacritty nitrogen ; yay -S polybar`
+`sudo pacman -S i3 neovim alacritty nitrogen rofi`
+`yay -S polybar picom i3-gaps-rounded`
+
+### List of nessesary extensions:
+addon stuff here:
+lxapperance for customization
+x11 clipboard for nvim
+gruvbox gtk theme
+human ubuntu cursor
+some font (havent found it yet)
 
 ### Maybe TO DO:
-- [ ] Add rofi config?
+- [x] Add rofi config?
 
 ### TO DO:
 - [x] Add i3 config
