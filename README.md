@@ -4,23 +4,22 @@
 btw.
 
 ### List of necessary programs:
-- Status bar: [Polybar](https://polybar.github.io/)
-- Window manager: [i3wm](https://i3wm.org/)
-- Terminal emulator: [Alacritty](https://alacritty.org/)
-- Text editor: [NeoVim](https://neovim.io/)
+- Status bar: [Polybar](https://wiki.archlinux.org/title/Polybar)
+- Window manager: [i3wm](https://wiki.archlinux.org/title/I3)
+- Terminal emulator: [Alacritty](https://wiki.archlinux.org/title/Alacritty)
+- Text editor: [NeoVim](https://wiki.archlinux.org/title/Neovim)
 - Wallpaper setter: [Nitrogen](https://wiki.archlinux.org/title/Nitrogen)
-- Rofi here
-- Picom here
+- Application lancher: [Rofi](https://wiki.archlinux.org/title/Rofi)
+- Window shadows: [Picom](https://wiki.archlinux.org/title/Picom)
 
 ### Quick replacement of config files
 `sh ./quick-setup.sh`
 
 ### Quick install of nessesary programs:
-`sudo pacman -S i3 neovim alacritty nitrogen rofi`
-`yay -S polybar picom i3-gaps-rounded`
+- `sudo pacman -S i3 neovim alacritty nitrogen rofi`
+- `yay -S polybar picom i3-gaps-rounded`
 
 ### List of nessesary extensions:
-addon stuff here:
 lxapperance for customization
 x11 clipboard for nvim
 gruvbox gtk theme
