@@ -17,7 +17,7 @@ set $mod Mod4
 focus_follows_mouse no
 for_window [class="^.*"] border pixel 0
 exec --no-startup-id nitrogen --restore &
-border_radius 7
+border_radius 8
 gaps inner 10
 gaps outer 1
 exec picom

@@ -18,11 +18,8 @@ shopt -s histappend
 # update the values of LINES and COLUMNS
 shopt -s checkwinsize
 
-# Enable color support 
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
+bind 'set show-all-if-ambiguous on'
+bind 'TAB:menu-complete'
 
 black='\[\033[01;30m\]'  # Black
 red='\[\033[01;31m\]'    # Red
@@ -34,7 +31,7 @@ cyan='\[\033[01;36m\]'   # Cyan
 white='\[\033[01;37m\]'  # White
 reset='\[\033[00m\]'     # Reset
 
-PS1='\n\[\033[1;91m\]\u\[\033[1;33m\]@\[\033[1;32m\]\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\n> '
+PS1='\n\[\033[1;91m\]\u\[\033[1;33m\]@\[\033[1;32m\]\h\[\033[00m\]:\[\033[1;34m\]\w\n\[\033[1;00m\]> '
 
 # Alias definitions stored in a separte file
 if [ -f $HOME/.bash_aliases ]; then
