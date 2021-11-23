@@ -2,6 +2,7 @@
 # ~/.bash_aliases
 #
 
+# Shortcuts to move between directories
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
