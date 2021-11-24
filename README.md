@@ -33,6 +33,7 @@ some font (havent found it yet)
 - [x] Add i3 config
 - [x] Add polybar config 
 - [x] Create *quick setup* script for config files 
+- [ ] Add root bashrc
 - [ ] Add aliases for colored less, more and cat
 - [ ] Configure i3 
 - [ ] Configure polybar
