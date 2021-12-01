@@ -20,8 +20,3 @@ if [ ! -d "$HOME/.wallpapers" ] ; then
 	mkdir ~/.wallpapers
 	cp ./backgrounds/wallpaper.png ~/.wallpapers/current.png
 fi
-
-# If nitrogen config doesn't exist, select new wallpaper
-if [ ! -d "$HOME/.config/nitrogen" ] ; then
-	nitrogen ~/.wallpapers
-fi

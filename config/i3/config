@@ -16,7 +16,7 @@
 set $mod Mod4
 focus_follows_mouse no
 for_window [class="^.*"] border pixel 0
-exec --no-startup-id nitrogen --restore &
+exec --no-startup-id feh --bg-fill ~/.wallpapers/current.png &
 border_radius 8
 gaps inner 10
 gaps outer 1
@@ -24,7 +24,7 @@ exec picom
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:DejaVu Sans Mono 8
+font pango:Fira Mono 8
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -82,7 +82,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+Shift+space focus mode_toggle
+bindsym $mod+Shift+space focus mode_toggle &
 
 # focus the parent container
 bindsym $mod+a focus parent
