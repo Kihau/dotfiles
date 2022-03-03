@@ -10,6 +10,9 @@ fi
 # Replace bash config files with new ones
 cp -f bashrc $HOME/.bashrc
 cp -f bash_aliases $HOME/.bash_aliases
+cp -f bash_profile $HOME/.bash_profile
+cp -f inputrc $HOME/.inputrc
+cp -f tmux.conf $HOME/.tmux.conf
 
 # Replace/Create all config files
 cp -rf ./config/* $HOME/.config/

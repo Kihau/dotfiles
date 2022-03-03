@@ -143,4 +143,4 @@ for_window [class="^.*"] floating disabled
 #bar {
 #        status_command i3status
 #}
-exec_always --no-startup-id ~/.config/polybar/launch.sh &
+#exec_always --no-startup-id ~/.config/polybar/launch.sh &
