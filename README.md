@@ -4,7 +4,7 @@
 btw.
 
 ### List of necessary programs:
-- Status bar: [i3status rust](https://wiki.archlinux.org/title/)
+- Status bar: [i3status rust](https://github.com/greshake/i3status-rust)
 - Window manager: [i3wm](https://wiki.archlinux.org/title/I3)
 - Terminal emulator: [Alacritty](https://wiki.archlinux.org/title/Alacritty)
 - Text editor: [NeoVim](https://wiki.archlinux.org/title/Neovim)
@@ -38,5 +38,6 @@ tmux
 - [x] Add aliases for colored less, more and cat
 - [x] Configure i3 
 - [ ] Configure i3status
+- [ ] Install all script
 - [x] Configure neovim and alacritty
 
