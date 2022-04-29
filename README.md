@@ -17,16 +17,17 @@ btw.
 
 ### Quick install of nessesary programs:
 - `sudo pacman -S i3status-rust neovim alacritty feh rofi`
-- `yay -S polybar picom i3-gaps-rounded`
+- `yay -S picom i3-gaps-rounded-git`
 
 ### List of nessesary extensions:
 lxapperance for customization
 x11 clipboard for nvim
 gruvbox gtk theme
 human ubuntu cursor
-some font (havent found it yet)
+fira mono/code - some font 
 neovim gruvbox theme
-tmux 
+tmux terminal multiplaxer
+pipewire for audio
 
 ### Maybe TO DO:
 - [x] Add rofi config?
@@ -37,7 +38,7 @@ tmux
 - [x] Create *quick setup* script for config files 
 - [x] Add aliases for colored less, more and cat
 - [x] Configure i3 
-- [ ] Configure i3status
-- [ ] Install all script
+- [x] Configure i3status
+- [x] Install all script
 - [x] Configure neovim and alacritty
 

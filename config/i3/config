@@ -15,30 +15,49 @@
 
 set $mod Mod4
 focus_follows_mouse no
-for_window [class="^.*"] border pixel 0
 exec --no-startup-id feh --bg-fill ~/.wallpapers/current.png &
-border_radius 8
-gaps inner 10
+#border_radius 8
+gaps inner 5
 gaps outer 1
-exec picom
+
+exec --no-startup-id picom
+for_window [class="^.*"] border pixel 3
+
+# class                 border  backgr. text    indicator child_border
+client.focused          #4c7899 #665c54 #ffffff #665c54   #665c54
+client.focused_inactive #333333 #222222 #888888 #292d2e   #222222
+client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+client.urgent           #2f343a #900000 #ffffff #900000   #900000
+client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+
+client.background       #ffffff
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:Fira Mono 8
+font pango:Fira Mono 10
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal
-#bindsym $mod+Return exec --no-startup-id i3-sensible-terminal
-bindsym $mod+Return exec --no-startup-id "WINIT_X11_SCALE_FACTOR=1.66 alacritty"
+# Start terminal
+#bindsym $mod+Return exec --no-startup-id "WINIT_X11_SCALE_FACTOR=1.66 alacritty"
+# Start terminal - for older machines (no GLSL 3.0 support)
+bindsym $mod+Return exec --no-startup-id "WINIT_X11_SCALE_FACTOR=1.66 LIBGL_ALWAYS_SOFTWARE=1 alacritty"
+# Start backup terminal - when alacritty breaks (for whatever reason)
+bindsym $mod+Shift+Return exec --no-startup-id "st"
 
 # kill focused window
 bindsym $mod+q kill
 
 # A more modern dmenu replacement is rofi:
-bindsym $mod+d exec "rofi -modi,run -show drun"
+bindsym $mod+d exec "rofi -show drun"
+bindsym $mod+r exec "rofi -show run"
+bindsym $mod+w exec "rofi -show window"
 #bindsym $mod+d exec "rofi -show window"
+
+# take screenshot
+bindsym --release $mod+Shift+Print exec "gnome-screenshot -ac"
+bindsym --release $mod+Print exec "gnome-screenshot -a"
 
 # change focus
 bindsym $mod+h focus left
@@ -75,7 +94,7 @@ bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
+bindsym $mod+t layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
@@ -158,4 +177,5 @@ bar {
         urgent_workspace #2f343a #900000 #ffffff
     }
 }
+
 #exec_always --no-startup-id ~/.config/polybar/launch.sh &
